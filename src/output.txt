@@ -1,0 +1,28 @@
+Calculating an 8000x8000 matrix
+Run # 1
+Threads: 1, Elapsed time: 1.18922 seconds
+Threads: 2, Elapsed time: 0.59971 seconds
+Threads: 4, Elapsed time: 0.39293 seconds
+Threads: 8, Elapsed time: 0.22456 seconds
+Threads: 16, Elapsed time: 0.19903 seconds
+Threads: 32, Elapsed time: 0.17674 seconds
+Threads: 64, Elapsed time: 0.18431 seconds
+Sleep for 10 seconds
+Run # 2
+Threads: 1, Elapsed time: 1.17313 seconds
+Threads: 2, Elapsed time: 0.59533 seconds
+Threads: 4, Elapsed time: 0.34035 seconds
+Threads: 8, Elapsed time: 0.22133 seconds
+Threads: 16, Elapsed time: 0.19233 seconds
+Threads: 32, Elapsed time: 0.18352 seconds
+Threads: 64, Elapsed time: 0.19296 seconds
+Sleep for 10 seconds
+Run # 3
+Threads: 1, Elapsed time: 1.22394 seconds
+Threads: 2, Elapsed time: 0.64048 seconds
+Threads: 4, Elapsed time: 0.38297 seconds
+Threads: 8, Elapsed time: 0.22845 seconds
+Threads: 16, Elapsed time: 0.19326 seconds
+Threads: 32, Elapsed time: 0.18107 seconds
+Threads: 64, Elapsed time: 0.20171 seconds
+Sleep for 10 seconds
