@@ -1,0 +1,16 @@
+Calculating an 8000x8000 matrix
+Run # 1
+Threads: 1, Elapsed time: 1.25232 seconds
+Threads: 1, Elapsed time: 1.26119 seconds
+Threads: 1, Elapsed time: 1.25178 seconds
+Sleep for 10 seconds
+Run # 2
+Threads: 1, Elapsed time: 1.22638 seconds
+Threads: 1, Elapsed time: 1.25095 seconds
+Threads: 1, Elapsed time: 1.24787 seconds
+Sleep for 10 seconds
+Run # 3
+Threads: 1, Elapsed time: 1.22827 seconds
+Threads: 1, Elapsed time: 1.24476 seconds
+Threads: 1, Elapsed time: 1.22452 seconds
+Sleep for 10 seconds

@@ -167,11 +167,11 @@ void terrain_inter(float **M, int n, int num_threads)
 
     for (int i = 0; i < num_threads; i++)
     {
-        // printf("Works");
         args[i].M = M;
         args[i].n = n;
         args[i].start = i * chunk_size;
         args[i].end = (i + 1) * chunk_size;
+
         // Because the matrix should include the 0th coordinate, we would have to adjust our calculation to have the last submatrix to be able to handle a second row.
         if (num_threads > 1 && i == num_threads - 1)
         {
@@ -277,48 +277,48 @@ int main()
 
     // ==============================================================
     // This part of the code is for the benchmarking for lab01-pt2
-    printf("Calculating an 8000x8000 matrix\n");
-    for (int i = 0; i < 3; i++)
-    {
-        printf("Run # %d\n", i+1);
-        run_benchmark(8000, 1);
-        run_benchmark(8000, 2);
-        run_benchmark(8000, 4);
-        run_benchmark(8000, 8);
-        run_benchmark(8000, 16);
-        run_benchmark(8000, 32);
-        run_benchmark(8000, 64);
-    //     // run_benchmark(16000, 1);
-    //     // run_benchmark(16000, 2);
-    //     // run_benchmark(16000, 4);
-    //     // run_benchmark(16000, 8);
-    //     // run_benchmark(16000, 16);
-    //     // run_benchmark(16000, 32);
-    //     // run_benchmark(16000, 64);
-    //     // run_benchmark(20000, 1);
-    //     // run_benchmark(20000, 2);
-    //     // run_benchmark(20000, 4);
-    //     // run_benchmark(20000, 8);
-    //     // run_benchmark(20000, 16);
-    //     // run_benchmark(20000, 32);
-    //     // run_benchmark(20000, 64);
-    //     // run_benchmark(50000, 1);
-    //     // run_benchmark(50000, 2);
-    //     // run_benchmark(50000, 4);
-    //     // run_benchmark(50000, 8);
-    //     // run_benchmark(50000, 16);
-    //     // run_benchmark(50000, 32);
-    //     // run_benchmark(50000, 64);
-    //     // run_benchmark(50000, 1);
-    //     // run_benchmark(100000, 2);
-    //     // run_benchmark(100000, 4);
-    //     // run_benchmark(100000, 8);
-    //     // run_benchmark(100000, 16);
-    //     // run_benchmark(100000, 32);
-    //     // run_benchmark(100000, 64);
-        printf("Sleep for 10 seconds\n");
-        sleep(10);
-    }
+    // printf("Calculating an 8000x8000 matrix\n");
+    // for (int i = 0; i < 3; i++)
+    // {
+        // printf("Run # %d\n", i+1);
+        // run_benchmark(8000, 1);
+        // run_benchmark(8000, 2);
+        // run_benchmark(8000, 4);
+        // run_benchmark(8000, 8);
+        // run_benchmark(8000, 16);
+        // run_benchmark(8000, 32);
+        // run_benchmark(8000, 64);
+        // run_benchmark(16000, 1);
+        // run_benchmark(16000, 2);
+        // run_benchmark(16000, 4);
+        // run_benchmark(16000, 8);
+        // run_benchmark(16000, 16);
+        // run_benchmark(16000, 32);
+        // run_benchmark(16000, 64);
+        // run_benchmark(20000, 1);
+        // run_benchmark(20000, 2);
+        // run_benchmark(20000, 4);
+        // run_benchmark(20000, 8);
+        // run_benchmark(20000, 16);
+        // run_benchmark(20000, 32);
+        // run_benchmark(20000, 64);
+        // run_benchmark(50000, 1);
+        // run_benchmark(50000, 2);
+        // run_benchmark(50000, 4);
+        // run_benchmark(50000, 8);
+        run_benchmark(50000, 16);
+        // run_benchmark(50000, 32);
+        // run_benchmark(50000, 64);
+        // run_benchmark(100000, 1);
+        // run_benchmark(100000, 2);
+        // run_benchmark(100000, 4);
+        // run_benchmark(100000, 8);
+        // run_benchmark(100000, 16);
+        // run_benchmark(100000, 32);
+        // run_benchmark(100000, 64);
+        //     printf("Sleep for 10 seconds\n");
+        //     sleep(10);
+        // }
 
-    return 0;
+        return 0;
 }
